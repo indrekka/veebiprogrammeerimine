@@ -9,14 +9,14 @@
   if($hournow >= 8 and $hournow <= 15){
 	  $partofday = "õppimise aeg";
   }
-  if($hournow >= 16 and $hournow <= 20) {
+  if($hournow >= 16 and $hournow <= 20){
 	  $partofday = "töö aeg";
   }
-  if($hournow >=21 and $hournow <= 22) {
-	  $partofday = "söömine"
+  if($hournow >=21 and $hournow <= 22){
+	  $partofday = "söömine";
   }
-  if($hournow >=22 and $hournow <= 23) {
-	  $partofday = "hügieen"
+  if($hournow >=22 and $hournow <= 23){
+	  $partofday = "hügieen";
   }
 	  
   //semestri möödumine
