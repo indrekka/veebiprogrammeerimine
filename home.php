@@ -20,6 +20,7 @@
   }
 	  
   //semestri möödumine
+  $today = new DateTime("now");
   $semesterstart = new DateTime("2020-8-31");
   $semesterend = new DateTime("2020-12-13");
   $semesterduration = $semesterstart->diff($semesterend);
@@ -27,7 +28,6 @@
   $semesterlength = $today->diff($semesterstart);
   $semesterlengthdays = $semesterlength ->format("%r%a");
   $semesterpercent = semesterlengthdays * 100 / $semesterdurationdays;
-  $today = new DateTime("now");
   $semesterdone = "blaaaa";
   if ($semesterpercent < 0) {
 	  $semesterdone = "Semester pole veel alanud";
