@@ -28,15 +28,15 @@
   $semesterlengthdays = $semesterlength ->format("%r%a");
   $semesterpercent = semesterlengthdays * 100 / $semesterdurationdays;
   $today = new DateTime("now");
-  $semesterdone = "blaaaa"
+  $semesterdone = "blaaaa";
   if ($semesterpercent < 0) {
-	  $semesterdone = "Semester pole veel alanud"
+	  $semesterdone = "Semester pole veel alanud";
   }
   if ($semesterpercent >= 100) {
-	  $semesterdone = "Semester on läbi!"
+	  $semesterdone = "Semester on läbi!";
   }
   if ($semesterpercent > 0 and $semesterpercent < 100) {
-	  $semesterdone = "Semester on täies hoos."
+	  $semesterdone = "Semester on täies hoos.";
   }
   
   
