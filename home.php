@@ -27,7 +27,7 @@
   $semesterdurationdays = $semesterduration->format("%r%a");
   $semesterlength = $today->diff($semesterstart);
   $semesterlengthdays = $semesterlength ->format("%r%a");
-  $semesterpercent = semesterlengthdays * 100 / $semesterdurationdays;
+  $semesterpercent = $semesterlengthdays * 100 / $semesterdurationdays;
   $semesterdone = "blaaaa";
   if ($semesterpercent < 0) {
 	  $semesterdone = "Semester pole veel alanud";
@@ -51,7 +51,7 @@
 <body>
   <h1><?php echo $username; ?></h1>
   <p>See veebileht on loodud õppetöö kaigus ning ei sisalda mingit tõsiseltvõetavat sisu!</p>
-  <p>See konkreetne leht on loodud veebiprogrammeerimise kursusel aasta 2020 sügissemestril <a href="https://www.tlu.ee">Tallinna Ülikooli</a> Digitehnoloogiate instituudis.</p>
+  <p>See leht on loodud veebiprogrammeerimise kursusel aasta 2020 sügissemestril <a href="https://www.tlu.ee">Tallinna Ülikooli</a> Digitehnoloogiate instituudis.</p>
   <p>Lehe avamise hetk: <?php echo $fulltimenow; ?>.</p>
   <p><?php echo "Praegu on " .$partofday ."."; ?></p>
 </body>
